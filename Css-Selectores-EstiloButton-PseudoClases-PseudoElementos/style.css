@@ -1,0 +1,51 @@
+.btn {
+    background-color: #4CAF50;
+    /* Fondo verde */
+    border: none;
+    /* Borde sin estilo */
+    color: white;
+    /* Texto blanco */
+    padding: 12px 24px;
+    /* Espacio interno para el contenido */
+    text-align: center;
+    /* Alineación del texto */
+    text-decoration: none;
+    /* Sin subrayado */
+    display: inline-block;
+    /* Mostrar como bloque en línea */
+    font-size: 16px;
+    /* Tamaño del texto */
+    margin: 4px 2px;
+    /* Margen exterior */
+    cursor: pointer;
+    /* Cambiar el cursor al pasar el ratón */
+    border-radius: 8px;
+    /* Esquinas redondeadas */
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+    transition: background-color 0.3s ease;
+    /* Animación al cambiar el color de fondo */
+}
+
+
+.btn::before {
+    content: "Pasa por encima";
+}
+
+.btn:hover::before {
+    content: "";
+}
+
+.btn::after {
+    content: "";
+}
+
+.btn:hover {
+    background-color: #3e8e41;
+    /* Cambiar el color de fondo al pasar el ratón */
+    color: white;
+}
+
+.btn:hover::after {
+    content: "¡Hecho!";
+}
