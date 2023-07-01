@@ -1,0 +1,29 @@
+.flex-container{
+    display: flex;
+    height: 95vh;
+}
+
+.lateral{
+    background-color: #2b2b2b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.principal{
+    padding: 10px;
+    flex-grow: 1;
+}
+
+
+@media (max-width: 640px) {
+    .flex-container {
+        flex-direction: column-reverse;
+    }
+    .lateral {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
